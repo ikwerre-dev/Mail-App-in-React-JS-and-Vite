@@ -4,6 +4,59 @@
 @tailwind utilities;
 
 
-:root{
+:root {
     background-color: black;
+}
+
+.ql-editor.ql-blank::before {
+    color: #ccc;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+}
+
+.ql-editor {
+    height: 10rem;
+    border: none;
+}
+
+.ql-container {
+    border: none !important;
+}
+
+.ql-toolbar {
+    border: none !important;
+    border-bottom: #000 1px solid !important;
+    color: white !important;
+    /* Ensure the toolbar text color is white */
+}
+
+/* Target the buttons in the toolbar */
+.ql-toolbar .ql-stroke {
+    stroke: white;
+    /* For SVG icons */
+}
+
+.ql-toolbar button,
+.ql-toolbar .ql-picker-label,
+.ql-toolbar .ql-picker-options {
+    color: white !important;
+    /* For button text color */
+}
+
+.ql-toolbar button:hover,
+.ql-toolbar button:focus {
+    color: white;
+    /* Ensure hover and focus states remain white */
+}
+
+/* For the selected state of buttons */
+.ql-toolbar .ql-active {
+    color: white;
+    /* Ensure active button state is also white */
+}
+
+
+.ql-editor {
+    border: none !important;
 }

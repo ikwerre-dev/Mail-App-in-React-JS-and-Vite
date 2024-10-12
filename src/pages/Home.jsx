@@ -7,6 +7,7 @@ const EmailInbox = () => {
   const navigate = useNavigate(); 
 
   const write = () => {
+    window.scrollTo(0, 0); 
     navigate('/write');  
   }
   return (
