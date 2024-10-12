@@ -28,33 +28,27 @@
     border: none !important;
     border-bottom: #000 1px solid !important;
     color: white !important;
-    /* Ensure the toolbar text color is white */
-}
+ }
 
-/* Target the buttons in the toolbar */
-.ql-toolbar .ql-stroke {
+ .ql-toolbar .ql-stroke {
     stroke: white;
-    /* For SVG icons */
-}
+ }
 
 .ql-toolbar button,
 .ql-toolbar .ql-picker-label,
 .ql-toolbar .ql-picker-options {
     color: white !important;
-    /* For button text color */
-}
+    background-color: #000;
+ }
 
 .ql-toolbar button:hover,
 .ql-toolbar button:focus {
     color: white;
-    /* Ensure hover and focus states remain white */
-}
+ }
 
-/* For the selected state of buttons */
-.ql-toolbar .ql-active {
+ .ql-toolbar .ql-active {
     color: white;
-    /* Ensure active button state is also white */
-}
+ }
 
 
 .ql-editor {

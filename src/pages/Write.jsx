@@ -4,7 +4,10 @@ import { ChevronDown } from 'lucide-react';
 import { Link, useNavigate } from 'react-router-dom';
 import ReactQuill from 'react-quill';
 import 'react-quill/dist/quill.snow.css'; 
+ import 'froala-editor/css/froala_style.min.css';
+import 'froala-editor/css/froala_editor.pkgd.min.css';
 
+import FroalaEditorComponent from 'react-froala-wysiwyg';
 const EmailCompose = () => {
   const navigate = useNavigate();
   const [subject, setSubject] = useState('');
@@ -48,6 +51,7 @@ const EmailCompose = () => {
           </motion.button>
         </div>
       </div>
+      
 
       <motion.div
         whileTap={{ scale: 0.95 }}
@@ -66,7 +70,7 @@ const EmailCompose = () => {
           >
             <input
               type="text"
-              placeholder="Search in emails"
+              placeholder="email@gmail.com"
               className="bg-transparent outline-none w-full text-sm text-gray-200 placeholder-gray-500"
             />
           </motion.div>
@@ -118,7 +122,7 @@ const EmailCompose = () => {
 
 
         <div className="flex flex-col space-y-2">
-          <span className="text-gray-400 text-sm font-bold px-1">Mailing Server</span>
+          <span className="text-gray-400 text-sm font-bold px-1">Mailing Body</span>
 
           <ReactQuill
             value={body}
