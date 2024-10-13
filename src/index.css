@@ -6,7 +6,7 @@
 
 :root {
     background-color: black;
-}
+ }
 
 .ql-editor.ql-blank::before {
     color: #ccc;
@@ -16,7 +16,7 @@
 }
 
 .ql-editor {
-    height: 10rem;
+    height: 15rem;
     border: none;
 }
 
