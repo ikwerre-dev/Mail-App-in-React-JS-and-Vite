@@ -112,7 +112,7 @@ const EmailCompose = () => {
         </div>
 
         <div className="flex flex-col">
-          <span className="text-gray-400 text-sm font-bold px-1">Sender Name</span>
+          <span className="text-gray-400 text-sm font-bold px-1">Sender Name </span>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
