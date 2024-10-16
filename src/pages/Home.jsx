@@ -240,7 +240,7 @@ const EmailItem = ({ emailId, name, subject, preview, time, unread, starred, att
         <div className="flex items-center space-x-2 flex-shrink-0">
           {starred && <Star size={16} className="text-yellow-500 fill-current" />}
           {attachment && <Paperclip size={16} className="text-gray-400" />}
-          <span className="text-xs text-gray-500">{time}</span>
+           <span className="text-xs text-gray-500">{time}</span>
         </div>
       </div>
       <p className={`text-sm truncate ${unread ? 'font-semibold text-gray-200' : 'text-gray-400'}`}>{subject}</p>
